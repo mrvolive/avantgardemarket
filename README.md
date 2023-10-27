@@ -31,4 +31,4 @@
 - styles.css
 - remove.js
 - collapsible.js
-burger.js
+- burger.js
