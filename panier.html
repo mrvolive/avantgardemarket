@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="images/logo_agm.ico" type="image/x-icon">
+    <!-- OpenSans Fonts -->
+    <link rel="stylesheet" href="fonts\opensans_regular_macroman\stylesheet.css" type="text/css" charset="utf-8">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img style="max-height:20px" src="images/logo_agm_blanc2.png" alt="logo"></a>
+            <div class="navbar-left">
+                <a href="#">Ecommerce</a>
+                <a href="catalogue.html">Shop</a>
+                <a href="#">Stories</a>
+                <a href="#">About</a>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navbar-right">
+                <a href="panier.html""><img src="images/cart.png" alt=""></a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+        <nav class="burger">
+            <div class="menu-container">
+                <img id="dropdown-button" src="images/burger.png" alt="icone menu" style="height: 50px;">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Ecommerce</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><input type="text" placeholder="Search"></li>
+                    <li><a href="#">Panier</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Votre panier</h1>
+
+    <!--=== Première ligne ===-->
+    <div id="first-container" class="container1">
+
+        <!-- Produits dans le panier -->
+        <div class="item">
+            <p><b>Pas assez dépensé ? Alors cliquez ici !</b></p>
+
+            <div id="1" class="sub-container">
+
+                <!-- Produit 1 -->
+                <div class="subitem-left">
+                    <img src="images/moustachepipe.webp">
+                </div>
+                <div class="subitem-right">
+                    <h2>Pipe à moustache</h2>
+                    <p>Taille : Ça passe<br>
+                        Quantité : 1<br>
+                    <div class="lastline">
+                        <div class="price">69 د.م.</div>
+                        <div class="remove" onclick="remove(1)"> <a href=#>Enlever :'(</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="2" class="sub-container">
+
+                <!-- Produit 2 -->
+                <div class="subitem-left">
+                    <img src="images/bolbracelet.webp">
+                </div>
+                <div class="subitem-right">
+                    <h2>Bracelet Bol</h2>
+                    <p>Taille : Diabète assuré<br>
+                        Quantité : 2<br>
+                    <div class="lastline">
+                        <div class="price">420 د.م.</div>
+                        <div class="remove" onclick="remove(2)"><a href=#>Enlever :'(</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+
+        </div>
+
+        <!-- Total et Checkout -->
+
+        <div class="item">
+            <div class="order-summary">
+                <h3>Résumé de la commande</h3>
+                <div class="coupon-code">
+                    <input type="text" placeholder="Code promo (si vous êtes pauvre)">
+                </div>
+
+                <div class="summary">
+                    <div class="text">Sous-total</div>
+                    <div class="value">489 د.م.</div>
+                </div>
+
+                <div class="summary">
+                    <div class="text">Livraison</div>
+                    <div class="value" style="color:gray">Gratuit (Promis)</div>
+                </div>
+
+                <hr class="bold">
+
+                <div class="summary">
+                    <div class="text">Total</div>
+                    <div class="value">489 د.م.</div>
+                </div>
+
+                <a class="invisible" href="about:blank" target="_blank">
+                    <div class="button pad-top">Aller au paiement</div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--=== Deuxième ligne ===-->
+    <div id="second-container" class="container2">
+
+        <!-- Order Information -->
+        <div class="item">
+            <div class="order-information">
+                <h3>Informations de commande</h3>
+                <hr class="bold">
+                <button type="button" class="collapsible">Politique de retour</button>
+                <div class="content">
+                    <p>Nous n'acceptons aucun retour. </p>
+                    <p>Si on vend ce genre d'objets, c'est clairement pas pour les récupérer après. C'est déjà un
+                        miracle que des gens achète ça bref, t'as compris l'idée juya.</p>
+                    <p>En plus si tu fais la conversion en € tu verras que c'est cadeau :)</p>
+                </div>
+                <hr>
+                <button type="button" class="collapsible">Options d'envoi</button>
+                <div class="content">
+                    <p>Par ornithorynque... Mais ils sont vraiment bien entrainés !</p>
+                    <p>Vous vous attendiez à quoi pour une livraison gratuite ? Au moins ça pollue pas...</p>
+                </div>
+                <hr>
+                <button type="button" class="collapsible">Conditions générales</button>
+                <div class="content">
+                    <p>C'est trop long et vous ne les lirez jamais de toute façon... Faites pas genre...</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <script src="collapsible.js"></script>
+    <script src="burger.js"></script>
+    <script src="remove.js"></script>
+
+    <footer>
+        <div class="footer-mail">
+            <div class="mail">
+                <h1> Inscris toi à la Newsletter stp</h1>
+                <div class="news">
+                    <p>Stp inscris toi tu vas pas le regretter c'est moi qui te le dit</p>
+                    <form action="">
+                        <div class="input-complet">
+                            <input type="text" class="input-placemail" style="text-align: center;" placeholder="TON MAIL ON A DIT" required />
+                            <button class="input-button">CLIQUE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="tout">
+                <div class="footer-trucsliens">
+                    <h4>Boutique</h4>
+                    <ul>
+                        <li><a href="#">Objets</a></li>
+                        <li><a href="#">Objets bien</a></li>
+                        <li><a href="#">Objets mieux</a></li>
+                        <li><a href="#">Objets cool</a></li>
+                        <li><a href="#">Objets supercool</a></li>
+                    </ul>
+                </div>
+                <div class="footer-trucsliens">
+                    <h4>À propos</h4>
+                    <ul>
+                        <li><a href="#">À propos de nous </a></li>
+                        <li><a href="#">Très responsable</a></li>
+                        <li><a href="#">Très téchnologique </a></li>
+                        <li><a href="#">On aime bien explorer </a></li>
+                    </ul>
+                </div>
+                <div class="footer-trucsliens">
+                    <h4>À L'AIDE</h4>
+                    <ul>
+                        <li><a href="#">J'AI BESOIN D'AIDE</a></li>
+                        <li><a href="#">JE RIGOLE PAS</a></li>
+                        <li><a href="#">OH NON MATHIS ARRIVE</a></li>
+                        <li><a href="#">SVP SAUVEZ MOI</a></li>
+                        <li><a href="#">JE SUIS COINCÉ À 3 RU</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

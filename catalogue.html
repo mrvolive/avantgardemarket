@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="stolen.css">
+  <link rel="stylesheet" href="fonts\opensans_regular_macroman\stylesheet.css" type="text/css" charset="utf-8">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+        <a href="index.html"><img style="max-height:20px" src="images/logo_agm_blanc2.png" alt="logo"></a>
+        <div class="navbar-left">
+            <a href="#">Ecommerce</a>
+            <a href="#">Shop</a>
+            <a href="#">Stories</a>
+            <a href="#">About</a>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="navbar-right">
+            <a href="panier.html""><img src="images/cart.png" alt=""></a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+    <nav class="burger">
+        <div class="menu-container">
+            <img id="dropdown-button" src="images/burger.png" alt="icone menu" style="height: 50px;">
+            <ul class="dropdown-menu">
+                <li><a href="#">Ecommerce</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><input type="text" placeholder="Search"></li>
+                <li><a href="#">Panier</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+  <div class="bandeau">
+    <h2>Avant-Garde Market</h2>
+    <p>Le marché avant-gardiste dans lequel vous trouverez moulte objet révolutionnaire qui changeront la face du monde
+      à tout jamais. </p>
+  </div>
+  <div class="container-global">
+    <form class="container-filtre">
+      
+      <h1 style="margin-bottom: 0;">Filters</h1>
+      <span style="color:lightgray; margin-top: 0;"><u>clear filters</u></span>
+
+      <h3 for="cat">Catégorie</h3>
+      <div class="categorie">
+
+        <input type="radio" name="cat" id="1" class="cat">
+        <label for="1" class="cat">Inutile</label>
+
+        <input type="radio" name="cat" id="2" class="cat">
+        <label for="2" class="cat">Mauvais</label>
+
+        <input type="radio" name="cat" id="3" class="cat">
+        <label for="3" class="cat">Pas super utile</label>
+
+        <input type="radio" name="cat" id="4" class="cat">
+        <label for="4" class="cat">Moyen</label>
+
+        <input type="radio" name="cat" id="5" class="cat">
+        <label for="5" class="cat">Bof</label>
+
+        <input type="radio" name="cat" id="6" class="cat">
+        <label for="6" class="cat">Pas top</label>
+
+        <input type="radio" name="cat" id="7" class="cat">
+        <label for="7" class="cat">Médiocre</label>
+      </div>
+
+      <h3 for="coul">Couleur</h3>
+      <input type="button" style="background-color:aqua; color:aqua;" value="/" name="coul" class="coul" id="coul1">
+      <input type="button" style="background-color:brown; color:brown;" value="/" name="coul" class="coul" id="coul2">
+      <input type="button" style="background-color:gold; color:gold;" value="/" name="coul" class="coul" id="coul3">
+      <input type="button" style="background-color:green; color:green;" value="/" name="coul" class="coul" id="coul4">
+      <br class="retour">
+      <input type="button" style="background-color:purple; color:purple;" value="/" name="coul" class="coul" id="coul5">
+      <input type="button" style="background-color:blanchedalmond; color:blanchedalmond;" value="/" name="coul"
+        class="coul" id="coul6">
+      <input type="button" style="background-color:blue; color:blue;" value="/" name="coul" class="coul" id="coul7">
+      <input type="button" style="background-color:darkolivegreen; color:darkolivegreen;" value="/" name="coul"
+        class="coul" id="coul8">
+
+      <h3>Prix</h3>
+      <div style="display:flex;flex-direction:column;">
+        <input type="number" step="0.01" name="prixMin" id="prixMin" required placeholder="min">
+        <input type="number" step="0.01" name="prixMax" id="prixMax" required placeholder="max" style="margin-top:2%;">
+      </div>
+    </form>
+
+    <div class="container-produit">
+      <a href="fiche_produit.html" class="produit">
+        <img src="images/baguette.jpg" alt="baguettes refroidissantes">
+        <hr width="98%">
+        <p class="nom"><b>Cooling wand:</b><br> baguettes refroidissantes</p>
+        <p class="prix">49.30درهم</p>
+      </a>
+
+      <a href="fiche_produit.html" class="produit">
+        <img src="images/burger.jpg" alt="kit main libre burger">
+        <hr width="98%">
+        <p class="nom"><b>Free hands burger:</b><br> kit main libre pour burger</p>
+        <p class="prix">0.07درهم</p>
+      </a>
+
+      <a href="fiche_produit.html" class="produit">
+        <img src="images/chausson.jpg" alt="chaussons lampe-torche">
+        <hr width="98%">
+        <p class="nom"><b>Lightning shoes:</b><br> pantoufle lampe-torche</p>
+        <p class="prix">14298درهم</p>
+      </a>
+
+      <a href="fiche_produit.html" class="produit">
+        <img src="images/bulle.jpg" alt="ceinture éclateuse de bulle">
+        <hr width="98%">
+        <p class="nom"><b>Bubble Splash:</b><br> ceinture éclateuse de bulle</p>
+        <p class="prix">12.50درهم</p>
+      </a>
+
+      <a href="fiche_produit.html" class="produit">
+        <img src="images/agitateur.jpg" alt="agitateur de chandail">
+        <hr width="98%">
+        <p class="nom"><b>Shirt Shaker:</b><br> agitateur de chandail</p>
+        <p class="prix">42درهم</p>
+      </a>
+
+      <a href="fiche_produit.html" class="produit">
+        <img src="images/crocs.jpg" alt="gants crocs">
+        <hr width="98%">
+        <p class="nom"><b>Amazing gloves:</b><br> crocs mitaines</p>
+        <p class="prix">1.23درهم</p>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-mail">
+        <div class="mail">
+            <h1> Inscris toi à la Newsletter stp</h1>
+            <div class="news">
+                <p>Stp inscris toi tu vas pas le regretter c'est moi qui te le dit</p>
+                <form action="">
+                    <div class="input-complet">
+                        <input type="text" class="input-placemail" style="text-align: center;" placeholder="TON MAIL ON A DIT" required />
+                        <button class="input-button">CLIQUE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tout">
+            <div class="footer-trucsliens">
+                <h4>Boutique</h4>
+                <ul>
+                    <li><a href="#">Objets</a></li>
+                    <li><a href="#">Objets bien</a></li>
+                    <li><a href="#">Objets mieux</a></li>
+                    <li><a href="#">Objets cool</a></li>
+                    <li><a href="#">Objets supercool</a></li>
+                </ul>
+            </div>
+            <div class="footer-trucsliens">
+                <h4>À propos</h4>
+                <ul>
+                    <li><a href="#">À propos de nous </a></li>
+                    <li><a href="#">Très responsable</a></li>
+                    <li><a href="#">Très téchnologique </a></li>
+                    <li><a href="#">On aime bien explorer </a></li>
+                </ul>
+            </div>
+            <div class="footer-trucsliens">
+                <h4>À L'AIDE</h4>
+                <ul>
+                    <li><a href="#">J'AI BESOIN D'AIDE</a></li>
+                    <li><a href="#">JE RIGOLE PAS</a></li>
+                    <li><a href="#">OH NON MATHIS ARRIVE</a></li>
+                    <li><a href="#">SVP SAUVEZ MOI</a></li>
+                    <li><a href="#">JE SUIS COINCÉ À 3 RU</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="burger.js"></script>
+</body>
+
+</html>

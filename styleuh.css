@@ -1,0 +1,117 @@
+:root {
+    --bg: #EFF2F6;
+  }
+
+.body{
+    background: var(--bg);
+    font-family: 'Open_sansregular';
+}
+ 
+.yes{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.mainbutton{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+    color: black;
+    border: 2px solid black;
+    font-family: "Public Sans", sans-serif;
+    text-align: center;
+    line-height: 1;
+    font-size: 23px;
+    background-color: white;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    text-decoration: none;
+
+}
+.mainbutton:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 29, 29);
+}
+
+.text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.reco{
+    float: left;
+    width: 10.33%;
+    height: auto;
+    padding: 15px;
+    margin-left: 30px;
+
+}
+.row{
+    content: "";
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .yes{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0px;
+    }
+    .mainbutton{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+        color: black;
+        border: 2px solid black;
+        font-family: "Public Sans", sans-serif;
+        text-align: center;
+        line-height: 1;
+        font-size: 23px;
+        background-color: white;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .mainbutton:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgb(29, 29, 29);
+    }
+
+    body{
+        margin: 0px;
+    }
+    .reco{
+        flex: 50%;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        margin-left: 30px;
+}
+
+
+
+}

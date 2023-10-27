@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_produit.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="fonts\opensans_regular_macroman\stylesheet.css" type="text/css" charset="utf-8">
+    <link rel="icon" href="logo_agm.ico" type="image/x-icon">
+    <title>Fiche Produit</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img style="max-height:20px" src="images/logo_agm_blanc2.png" alt="logo"></a>
+            <div class="navbar-left">
+                <a href="#">Ecommerce</a>
+                <a href="catalogue.html">Shop</a>
+                <a href="#">Stories</a>
+                <a href="#">About</a>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navbar-right">
+                <a href="panier.html"></a><img class="cart" src="images/cart.png" alt=""></a>
+                <a href="#">Login</a>
+                
+            </div>
+        </nav>
+        <nav class="burger">
+            <div class="menu-container">
+                <img id="dropdown-button" src="images/burger.png" alt="icone menu" style="height: 50px;">
+                <ul class="dropdown-menu">
+                    <li><a href="#présentation">Ecommerce</a></li>
+                    <li><a href="#produit">Shop</a></li>
+                    <li><a href="#contact-tel">Stories</a></li>
+                    <li><a href="#contact-tel">About</a></li>
+                    <li><a href="#contact-tel">Contacts</a></li>
+                    <li><input type="text" placeholder="Search"></li>
+                </ul>
+            </div>
+        </nav>
+</header>
+
+<div class="container">
+    <div class="video">
+        <video width="300px" height="500px" autoplay loop>
+            <source src="images/invention inutile.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="item">
+        <div class="titre">
+            <h1>Self-agitateur de t-shirt</h1>
+        </div>   
+        <div class="container_prix">
+            <div class="prix">
+                <h2 id="prix">464.39</h2><h2>د.م.</h2>
+            </div>
+            <div>
+                <p>Le self-agitateur de t-shirt vous permet d'agiter votre t-shirt sans aucune action de votre part, ce qui en fait quelque chose d'absolument
+            indispensable dans votre vie de tous les jours.Il est absolument invisible et est disponible pour seulement 464.39د.م. (piles non incluses). Alors n'hésitez plus et achetez-le !
+                </p>
+            </div>
+        </div>       
+        <div class="container_input">
+            <div class="compteur">
+                <button class="button"  onclick="decrement(); mettreJourPrix()">-</button>
+                <p id="counter">0</p>
+                <button class="button" onclick="increment(); mettreJourPrix()">+</button>
+            </div>
+            <div class="input">
+                <select name="couleurs" id="couleurs">
+                    <option value="surimi">Surimi</option>
+                    <option value="nuances de gris">Noir et blanc</option>
+                    <option value="ciel">Ciel</option>
+                    <option value="orage">Orage</option>
+                    <option value="glamour">Glamour</option>
+                </select>
+            </div>
+        </div>
+        <div class="container_button">
+            <form action="catalogue.html">
+                <button class="main" type="submit" id="button">$ Ajoutez au panier et continuez à acheter $ :</button>
+            </form>
+            <form action="panier.html">
+                <button class="main" type="submit">Faites chauffer la CB !</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="container_note">
+        <h2>Notes et avis</h2>
+        <div class="moyenne_form">
+            <div class="moyenne">
+                <h3>5/5</h3>
+                <img src="images/étoiles.png" alt="etoile">
+            </div>
+            <div class="form">
+                <form method="post" onsubmit="alert('Avis en cours de contrôle par nos modérateurs');">
+                    <div>
+                        <input type="text" name="prenom" id="prenom" placeholder="Prenom" required>
+                    </div>
+                    <div>
+                        <input type="text" name="nom" id="nom" placeholder="Nom" required>
+                    </div>
+                    <div >
+                        <input type="text" name="note" id="note" placeholder="Note / 5" pattern="[0-5]/[5]" required>
+                    </div>
+                    <div>
+                        <textarea name="avis" id="avis" cols="20" rows="5" placeholder="Avis" required></textarea>
+                    </div>
+                    <div class="form_button">
+                        <button class="sub" type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="note">
+            <div>
+                <h5>Rick Sanchez</h5>
+                <h6>5/5</h6>
+                <p class="avis">MAS-TER-CLASS !</p>
+            </div>
+            <div>  
+                <h5>Jerry Smith</h5>
+                <h6>5/5</h6>
+                <p class="avis">Je suis chokbar tellement c'est génial !</p>
+            </div>
+            <div>
+                <h5>Marie-Lune</h5>
+                <h6>5/5</h6>
+                <p class="avis">Un must have !</p>
+            </div>
+            <div>
+                <h5>Morty Smith</h5>
+                <h6>5/5</h6>
+                <p class="avis">Mérite un prix nobel !</p>
+            </div>
+            <div>
+                <h5>Beth Smith</h5>
+                <h6>5/5</h6>
+                <p class="avis"> J'suis devenue accro !</p>
+            </div>
+        </div>
+    </div>
+<script src="burger.js"></script>
+<script src="fiche_produit.js"></script>
+</body>
+<footer>
+    <div class="footer-mail">
+    <div class ="mail">
+        <h1> Inscris toi à la Newsletter stp</h1>
+        <div class ="news">
+        <p>Stp inscris toi tu vas pas le regretter c'est moi qui te le dit</p>
+        <form action="">
+            <div class="input-complet">
+            <input type="text" class="input-placemail" placeholder="    TON MAIL ON A DIT" required/>
+            <button class="input-button">CLIQUE</button>
+        </div>
+        </form>
+    </div>
+    </div>
+    <div class="tout">
+        <div class="footer-trucsliens">
+            <h4>Boutique</h4>
+            <ul>
+                <li><a href="#">Objets</a></li>
+                <li><a href="#">Objets bien</a></li>
+                <li><a href="#">Objets mieux</a></li>
+                <li><a href="#">Objets cool</a></li>
+                <li><a href="#">Objets supercool</a></li>
+            </ul>
+        </div>
+        <div class="footer-trucsliens">
+            <h4>À propos</h4>
+            <ul>
+                <li><a href="#">À propos de nous </a></li>
+                <li><a href="#">Très responsable</a></li>
+                <li><a href="#">Très téchnologique </a></li>
+                <li><a href="#">On aime bien explorer </a></li>
+            </ul>
+        </div>
+        <div class="footer-trucsliens">
+            <h4>À L'AIDE</h4>
+            <ul>
+                <li><a href="#">J'AI BESOIN D'AIDE</a></li>
+                <li><a href="#">JE RIGOLE PAS</a></li>
+                <li><a href="#">OH NON MATHIS ARRIVE</a></li>
+                <li><a href="#">SVP SAUVEZ MOI</a></li>
+                <li><a href="#">JE SUIS COINCÉ À 3 RU</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</footer>
+</html>

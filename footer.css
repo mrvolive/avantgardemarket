@@ -1,0 +1,167 @@
+:root {
+    --bg: #EFF2F6;
+  }
+
+footer {
+    padding: 40px 0;
+}
+
+.tout{
+    padding-left: 100px;
+}
+
+.footer-mail {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.footer-trucsliens h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-trucsliens ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-trucsliens li {
+    margin-bottom: 5px;
+}
+
+.footer-trucsliens a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-trucsliens a:hover {
+    color: #333;
+}
+
+.footer-trucsliens{
+    width: 100%;
+}
+
+
+.news {
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.news h2 {
+    margin-bottom: 20px;
+}
+
+.news p {
+    margin-bottom: 30px;
+}
+
+.news form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 80px;
+}
+
+
+.input-button {
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    height: 35px;
+    width: 0px;
+    left: -60px;
+    color: #000000;
+    font-size: 15px;
+}
+
+.input-button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.input-complet {
+    display: flex;
+    width: 80%;
+    height: 35px;
+    border: 1px solid #000000;
+    justify-content: space-between;
+    top: 20px;
+}
+
+.input-complet input {
+    border: none;
+}
+
+.input-placemail {
+    background-color: var(--bg);
+}
+
+.tout{
+    display: flex;
+    width: 100%;
+    word-break: break-word;
+    align-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+
+    .mail h1 {
+        font-size: 30px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .news p {
+        top: -30%;
+        margin: 30px;
+        text-align: center;
+    }
+
+    .footer-mail p {
+        position: relative;
+        text-align: left;
+        right: 15px;
+    }
+
+    .mail h1 {
+        position: relative;
+        text-align: left;
+        right: 15px;
+        margin-left: 10%;
+    }
+
+    .input-complet button {
+        position: relative;
+        width: 3%;
+    }
+
+    .input-complet {
+        margin-left: 10%;
+
+
+
+    }
+
+    .tout {
+        justify-content: space-between;
+        margin-top: 25%;
+        margin-left: 8px;
+        padding: 10px;
+        font-size: 90%;
+        position: relative;
+        display: flex;
+    }
+    .footer-mail {
+        flex-wrap: wrap;
+    }
+
+}

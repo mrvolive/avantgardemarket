@@ -1,0 +1,284 @@
+:root {
+    --bg: #EFF2F6;
+  }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Public Sans', 'Helvetica Neue', sans-serif;
+    background: var(--bg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 1%;
+}
+
+.prix{
+    display: flex;
+    margin:0;
+}
+
+.main{
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    border :none;
+    font-weight: bold;
+}
+
+.main:hover {
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 60, 255, 0.815);
+    cursor: pointer;
+    border :none;
+}
+
+.sub{
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border : 1px solid black;
+    font-weight: bold;
+}
+
+.sub:hover {
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.compteur{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 0; /* Ajustement de la valeur de padding */
+    margin: 0; /* Ajustement de la valeur de margin */
+    width: 125px;
+    
+}
+
+.button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* Ajout de cette ligne pour supprimer le contour */
+    background: none; /* Ajout de cette ligne pour rendre l'arrière-plan transparent */
+}
+
+#counter {
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+video{
+    margin-top: 3%;
+}
+
+textarea{
+    resize: none;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+}
+
+.container_.prix{
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2{
+    margin: 2%;
+}
+
+.container_note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin-left:20%;
+}
+
+.note{
+    display: flex;
+    flex-direction: row;
+    gap:2%;
+}
+
+.note div {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.note div h5,h6{
+    margin: 0;
+}
+
+
+
+.container_button{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.container_input{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.item p{
+    margin-bottom: 2%;
+}
+
+.moyenne img{
+    width: 75%;
+}
+
+.moyenne{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    width: 20%;
+}
+
+.moyenne h3{
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.moyenne_form{
+    display: flex;
+    flex-direction: row;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input{
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.form button{
+    margin-bottom: 10%;
+}
+
+select{
+    width: 125px;
+    height: 50px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    
+    body{
+        display: flex;
+        min-height: 100vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Public Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    .container_prix{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container_note{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+        margin-left:0%;
+        margin-top: 2%;
+    }
+
+    .moyenne_form{
+        display: flex;
+        width: 100%;
+    }
+
+    .moyenne{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .note{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avis{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,145 @@
+body {
+    margin-top: 150px;
+        font-family: 'Open_sansregular';
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    font-size: large;
+    color: White;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.navbar-right button {
+    margin-left: 10px;
+}
+
+.navbar img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    height: 30px;
+}
+
+.navbar input {
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    border: none;
+}
+
+.menu-container {
+    visibility: hidden;
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        visibility: hidden;
+        width: 80%;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .menu-container {
+        position: relative;
+        display: none;
+        float: right;
+        padding-right: 1%;
+        font-size: 1.2rem;
+    }
+
+    #dropdown-button {
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        max-width: 80%;
+        margin-right: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-menu li {
+        padding: 10px;
+    }
+
+    .dropdown-menu a {
+        text-decoration: none;
+        color: rgb(100, 100, 100);
+        font-family: 'open_sansregular';
+        display: block;
+    }
+
+    .dropdown-menu a:hover {
+        color: rgb(50, 50, 50);
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .menu-container {
+        visibility: visible;
+        display: inline-block;
+    }
+
+    .burger img {
+        cursor: pointer;
+        transition: all 0.1s ease-out;
+    }
+
+    .burger img:hover {
+        cursor: pointer;
+        scale: 110%;
+    }
+
+    .burger input {
+        padding: 10px;
+        border: none;
+        width: 80%;
+    }
+    
+}

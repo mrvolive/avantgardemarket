@@ -1,0 +1,241 @@
+:root {
+  --bg: #EFF2F6;
+}
+
+hr.bold {
+  height: 1px;
+  background-color: #000;
+}
+
+a.invisible {
+  text-decoration: none;
+}
+
+.pad-top{
+  margin-top:20px ;
+}
+
+body {
+  background-color: var(--bg);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: 'Open_sansregular';
+}
+
+
+.order-information .content{
+  color: #979797;
+}
+
+.order-information .collapsible{
+  color: #979797;
+}
+
+/* -------------------------- */
+/*** FlexContainer et Items ***/
+/* -------------------------- */
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  word-wrap: break-word;
+  padding-bottom: 20px;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding-top: 50px;
+}
+
+.item {
+  flex: 1, 1, 0;
+  width: 47%;
+}
+
+.subitem-left {
+  flex: 1, 1, 0;
+  width: 140px;
+  align-self: center;
+  padding-right: 10px;
+}
+
+.subitem-left img {
+  height: 140px;
+  max-width: 140px;
+}
+
+.subitem-right {
+  flex: 1, 1, 0;
+  width: 100%;
+  align-self: center;
+  margin: 0, auto;
+}
+
+.subitem-right p {
+  margin-bottom: 5px;
+}
+
+.subitem-right h2 {
+  margin: auto;
+}
+
+.subitem-separator {
+  flex: 1, 1, 0;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.lastline {
+  display: flex;
+  justify-content: space-between;
+}
+.lastline .price {
+  justify-self: flex-start;
+  font-weight: bold;
+  font-size: 24px;
+}
+.lastline .remove{
+  display: grid;
+  align-content: end;
+  font-size: 12px;
+}
+
+/* ----------- */
+/*** Summary ***/
+/* ----------- */
+.summary{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.summary .text{
+  justify-self: flex-start;
+}
+
+.summary .value{
+  display: grid;
+  align-content: end;
+}
+
+/* -------------- */
+/*** Coupon Box ***/
+/* -------------- */
+.coupon-code{
+  padding-bottom: 20px;
+}
+.coupon-code input {
+  background-color: var(--bg);
+  width: 100%;
+  padding: 0.8em 2em;
+  box-sizing: border-box;
+  border: 2px solid #979797;
+}
+
+/* ------------------- */
+/*** Checkout Button ***/
+/* ------------------- */
+.order-summary .button {
+  color: #fff;
+  padding: 1.5em 2em;
+  background: #000;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.button:hover {
+  color: #000;
+  transform: translate(-0.25rem, -0.25rem);
+  background: #979797;
+  box-shadow: 0.25rem 0.25rem #000;
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+/* Collapsible */
+.collapsible {
+  background-color: var(--bg);
+  cursor: pointer;
+  width: 100%;
+  padding-top: 15px;
+  text-align: left;
+  font-size: 15px;
+  border: none;
+  transition: all 0.1s ease-out;
+}
+
+.collapsible:hover {
+  color: #000;
+  transform: scale(102%);
+}
+
+.collapsible:active {
+  color: #000;
+  transform: scale(100%);
+}
+
+
+.content {
+  padding: 0 7px;
+  display: none;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.collapsible:after {
+  content: '+';
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-";
+}
+
+
+
+
+
+/* Styles pour les écrans étroits (largeur < 768px) */
+@media (max-width: 768px) {
+
+  /* Styles spécifiques pour les écrans étroits */
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    flex: 1, 1, 0;
+    width: auto;
+    word-wrap: break-word;
+  }
+
+  .menu-container {
+    display: inline-block;
+}
+
+}
+
